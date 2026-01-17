@@ -2,9 +2,11 @@
 
 import { motion } from "framer-motion";
 import { BurstVideo } from "./ui/burst-video";
+import { FLAVORS } from "@/data/flavors";
 import { cn } from "@/lib/utils";
 
 interface FlavorProps {
+
     name: string;
     tagline: string;
     src: string;
@@ -45,37 +47,6 @@ const FlavorCard = ({ name, tagline, src, color, glowColor }: FlavorProps) => {
 };
 
 export const FlavorGrid = () => {
-    const flavors = [
-        {
-            name: "Citrus Burst",
-            tagline: "Orange",
-            src: "https://iqbotppurfczlvjtcoud.supabase.co/storage/v1/object/public/assets/orange.webp",
-            color: "text-orange-500",
-            glowColor: "rgba(249, 115, 22, 0.4)",
-        },
-        {
-            name: "Tropical Burst",
-            tagline: "Pineapple",
-            src: "https://iqbotppurfczlvjtcoud.supabase.co/storage/v1/object/public/assets/pineapple.webp",
-            color: "text-yellow-400",
-            glowColor: "rgba(250, 204, 21, 0.4)",
-        },
-        {
-            name: "Vineyard Burst",
-            tagline: "Grape",
-            src: "https://iqbotppurfczlvjtcoud.supabase.co/storage/v1/object/public/assets/grapes.webp",
-            color: "text-purple-500",
-            glowColor: "rgba(168, 85, 247, 0.4)",
-        },
-        {
-            name: "Summer Burst",
-            tagline: "Strawberry",
-            src: "https://iqbotppurfczlvjtcoud.supabase.co/storage/v1/object/public/assets/stawberry.webp",
-            color: "text-red-500",
-            glowColor: "rgba(239, 68, 68, 0.4)",
-        },
-    ];
-
     return (
         <section id="flavors" className="py-24 px-6 md:px-12 bg-black">
             <div className="max-w-7xl mx-auto">
@@ -86,7 +57,7 @@ export const FlavorGrid = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {flavors.map((flavor) => (
+                    {FLAVORS.map((flavor) => (
                         <div key={flavor.name} className="lg:col-span-1 flex flex-col">
                             <FlavorCard {...flavor} />
                         </div>
@@ -96,3 +67,4 @@ export const FlavorGrid = () => {
         </section>
     );
 };
+
