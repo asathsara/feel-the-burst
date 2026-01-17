@@ -104,10 +104,7 @@ export const Hero = () => {
                 ))}
             </div>
 
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
-                <div className="w-px h-12 bg-linear-to-b from-white to-transparent animate-bounce" />
-                <span className="text-[10px] tracking-widest text-white/40 uppercase">Scroll</span>
-            </div>
+            
         </section>
     );
 };
