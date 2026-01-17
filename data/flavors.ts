@@ -36,3 +36,10 @@ export const FLAVORS: Flavor[] = [
         glowColor: "rgba(239, 68, 68, 0.4)",
     },
 ];
+
+export const HERO_VIDEOS = [
+    "https://iqbotppurfczlvjtcoud.supabase.co/storage/v1/object/public/assets/orange.webp",
+    "https://iqbotppurfczlvjtcoud.supabase.co/storage/v1/object/public/assets/pineapple.webp",
+    "https://iqbotppurfczlvjtcoud.supabase.co/storage/v1/object/public/assets/grapes.webp",
+    "https://iqbotppurfczlvjtcoud.supabase.co/storage/v1/object/public/assets/stawberry.webp",
+];
