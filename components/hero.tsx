@@ -60,15 +60,15 @@ export const Hero = () => {
             <div className="absolute inset-x-6 top-1/2 -translate-y-1/2 z-30 flex justify-between pointer-events-none">
                 <button
                     onClick={scrollPrev}
-                    className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 transition-all pointer-events-auto active:scale-95 group"
+                    className="flex items-center justify-center text-white/40 hover:text-white transition-all pointer-events-auto active:scale-90 group p-4"
                 >
-                    <ChevronLeft className="w-6 h-6 group-hover:-translate-x-0.5 transition-transform" />
+                    <ChevronLeft className="w-12 h-12 stroke-[1.5px] group-hover:-translate-x-1 transition-transform opacity-30" />
                 </button>
                 <button
                     onClick={scrollNext}
-                    className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 transition-all pointer-events-auto active:scale-95 group"
+                    className="flex items-center justify-center text-white/40 hover:text-white transition-all pointer-events-auto active:scale-90 group p-4"
                 >
-                    <ChevronRight className="w-6 h-6 group-hover:translate-x-0.5 transition-transform" />
+                    <ChevronRight className="w-12 h-12 stroke-[1.5px] group-hover:translate-x-1 transition-transform opacity-30" />
                 </button>
             </div>
 
